@@ -8,9 +8,7 @@
 .navbar {
   @apply w-full shadow-sm  border-b lg:flex lg:justify-around;
 }
-.dropdown {
-  @apply lg:hidden;
-}
+
 .menu {
   @apply p-4 text-lg;
 }
@@ -34,10 +32,10 @@
 }
 
 
-.image-back {
-  background: url("public/image/p1.jpg");
-}
-.image-back1 {
+/* .image-back {
+  background: url("src/public/image/p1.jpg ");
+} */
+/* .image-back1 {
   background: url("public/image/p2.jpg");
 }
 .image-back2 {
@@ -45,7 +43,7 @@
 }
 .image-back3 {
   background: url("public/image/p4.jpg");
-}
+} */
 .overlay {
   min-width: 16rem;
   min-height: 14rem;
@@ -53,6 +51,11 @@
 .overlay:hover {
   background-color: rgba(0, 0, 0, 0.649);
 }
+.overlay:hover .portfolio-title{
+
+    width: 24rem;
+  
+ }
 
 @media (min-width:1024px){
   .overlay {
@@ -61,12 +64,16 @@
   }
 }
 
-input{
-  @apply bg-transparent border-[1px] border-gray-600 my-4 p-4 w-full 
+
+.input-field{
+  @apply bg-transparent border-[1px] border-gray-600 my-3 p-4 w-full ;
 }
 textarea{
-  @apply bg-transparent border-[1px] border-gray-600 my-4 p-4 w-full 
+  @apply bg-transparent border-[1px] border-gray-600 my-4 p-4 w-full ;
 }
+
+
+
 
 /* slider css  */
 
@@ -171,3 +178,5 @@ textarea{
 
 .show {display: block;}
 /* end Dropdown */
+
+

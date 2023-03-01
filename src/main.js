@@ -30,6 +30,7 @@ dropdwon.addEventListener('click',()=>{
         project.classList.add('hidden')
         navbar.classList.add('text-black');
         navbar.classList.add('bg-white');
+        navbar.classList.remove('bg-teal-900');
 
         // for image 
         img1.classList.remove('hidden');
@@ -112,10 +113,10 @@ function myFunction() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
